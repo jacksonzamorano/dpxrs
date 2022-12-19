@@ -111,6 +111,10 @@ fn main() {
     let mut authentication = authenticate(&mut console);
 
     let input_args = env::args().collect::<Vec<String>>();
+    if input_args.len() == 1 {
+        console.print_static("Welcome to DPX. You can check out the commands here: https://github.com/jacksonzamorano/dpx.");
+        exit(0);
+    }
     let cmd = input_args[1].to_string();
     let args = &input_args[2..];
 

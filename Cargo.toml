@@ -1,6 +1,6 @@
 [package]
 name = "dpx"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 description = "Dropbox API from the command line."
 license = "MIT"
